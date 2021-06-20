@@ -2,20 +2,10 @@ import React, { Component } from 'react'
 
 class UserItem extends Component {
 
-
-  state = {
-    id: 'id',
-    login: 'myjombo',
-    avatar_url: 'https://avatars.githubusercontent.com/u/1?v=4',
-    html_url: 'https://github.com/mojombo'
-  }
-
-
-
   render() {
 
     //extract state variables from the the 'state'
-    const {login, avatar_url, html_url} = this.state;
+    const {login, avatar_url, html_url} = this.props.user;
 
 
     return (
