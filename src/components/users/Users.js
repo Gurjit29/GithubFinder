@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import UserItem from './UserItem';
 
+
 class Users extends Component {
 
   
@@ -22,4 +23,6 @@ const userStyle = {
   gridGap:'1rem'
 }
 
-export default Users
+
+
+export default Users;
