@@ -3,12 +3,6 @@ import PropTypes from 'prop-types';
 
 const UserItem = ({user: {login, avatar_url, html_url}}) => {
 
-  //render() {
-
-    //extract state variables from the the 'state'
-    // const {login, avatar_url, html_url} = props.user;
-
-
     return (
       <div className="card text-center">
         <img src={avatar_url} alt="" className="round-img" 
@@ -20,7 +14,7 @@ const UserItem = ({user: {login, avatar_url, html_url}}) => {
         </div>
       </div>
     )
- // }
+
 }
 
 UserItem.propTypes = {
