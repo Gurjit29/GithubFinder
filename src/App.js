@@ -53,7 +53,6 @@ class App extends Component {
   }
 
   //Get a single github user
-
   getUser = async(username) =>{
 
     this.setState({ loading: true });
@@ -91,6 +90,7 @@ class App extends Component {
 
               <Route exact path="/about" component = {About} />
               <Route exact path="/user/:login" render={props => (
+
                 <User {...props} getUser={this.getUser} user={user} loading={loading} />
               )} />
 
